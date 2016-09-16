@@ -1,0 +1,782 @@
+aside, footer, header, nav { 
+	display: block;
+	}
+	
+body {	
+	font-family: Calibri, "Trebuchet MS", sans-serif;
+	font-size: 1em;
+	background-color:#f3f3f3;
+	box-sizing: border-box;
+	}
+
+/* ------------------------------------------------------- DIV MARE --------- */
+#container {
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 1%;
+	}
+	
+/* ------------------------------------------------------- HEADER --------- */
+	
+header {
+	width: 100%;
+	height: 30%;
+	margin-bottom: 0.5%;
+	position: relative;
+	box-sizing: border-box;
+	}
+
+header img {
+	width: 100%;
+	height: auto;
+	border: solid 1px;
+	}
+	
+#logo1 {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	}
+	
+#logo1  img {
+	width: 20%;
+	height: auto;
+	box-sizing: border-box;
+	border: none;
+	background-color: white;
+	}
+	
+#logo1 {
+	top: 1px;
+	left: 1px;
+	}
+	
+
+
+/* ------------------------------------------------------- MENIU ------------ */
+nav
+	{
+	width: 100%;
+	height: 10%;
+	background-color: #E17A00;
+	background: linear-gradient(#E17A00, #D56800);
+	box-shadow: 0 0 10px #714461;
+	margin-bottom: 1%;
+	padding: 5px;
+	display: flex;
+	box-sizing: border-box;
+	}
+	
+.dropdown 
+	{
+	width: 15%;
+	height : 100%;
+	position : relative;
+	cursor: pointer;	
+	float: left;
+	background-color: rgba(167, 34, 0, 0.4);
+	border: solid 1px maroon;
+	border-radius: 10px;
+	text-align: center;
+	flex: 1;
+	margin-right: 10px;
+	transition: 0.4s;
+	}
+
+.dropdown:first-child {
+	margin-left: 5px;
+	}
+	
+.dropdown:last-child {
+	margin-right: 5px;
+	}
+
+.meniu 
+	{
+	color: white;
+	padding: 10px 20px;
+	}
+	
+.meniu a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	}
+
+#submeniu a 
+	{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(190, 86, 0);
+	padding: 10px 20px;
+	border: solid 1px maroon;
+	}
+	
+#submeniu a:first-child
+	{
+	border-bottom: none;
+	}
+	
+#submeniu a:last-child
+	{
+	border-bottom-left-radius: 10px;	
+	border-bottom-right-radius: 10px;
+	}
+
+#submeniu 
+	{
+	width: 100%;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	}
+
+.dropdown:hover #submeniu 
+	{
+	display: block;
+	}
+	
+.dropdown:hover
+	{
+	background-color: rgba(167, 34, 0, 1);
+	}
+	
+#submeniu a:hover 
+	{
+	background-color: rgba(167, 34, 0, 1);
+	}
+	
+.dropdown:nth-child(2):hover
+	{
+	background-color: rgba(167, 34, 0, 1);
+	border-bottom-left-radius: 0;	
+	border-bottom-right-radius: 0;
+	}
+	
+	
+/* ---------------------------------------------------------------- CONTENT ---------------- */
+#main 
+	{
+	width: 79%;
+	height: 45%;
+	float: left;
+	padding: 1%;
+	background-color:#ffffff;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	}
+
+#main h1 {
+	font-size: 2em;
+	text-align: center;
+	}
+	
+#main p {
+	text-indent: 25px;
+	text-align: justify;
+	padding: 5px;
+	}
+	
+/* --------------------------------------------------------------- GALERIE IMAGINI ------------ */
+
+#galerie
+	{
+	width: 79%;
+	height: 45%;
+	float: left;
+	padding: 1%;
+	background-color: white;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	text-align: center;	
+	box-sizing: border-box;
+	}
+	
+#galerie img
+	{
+	margin: 1%;
+	cursor: pointer;
+	}
+
+#galerie img:hover
+	{
+	box-shadow: 0 0 10px #6f425f;
+	}
+	
+.ascunde 
+	{
+    position:fixed;
+    display:none;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, .8);
+	}
+
+.imagine-mare 
+	{
+    width: 75%; 
+	max-width: 1000px;
+	height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+	padding: 0.2% 0;	
+    cursor: pointer;	
+	}
+	
+.imagine-mare img 
+	{	
+    width: 100%;
+	box-shadow: 0 0 20px #fff;
+	}
+	
+/* --------------------------------------------------------------- GALERIE VIDEO ------------ */
+#video
+	{
+	width: 79%;	
+	height: 45%;
+	float: left;
+	padding: 1%;
+	background-color: white;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	text-align: center;	
+	box-sizing: border-box;
+	}
+	
+video {
+	width: 100%;
+	}
+	
+/* ---------------------------------------------------------------- HARTA ---------------- */
+#harta
+	{
+	width: 79%;
+	height: 45%;
+	float: left;
+	padding: 2%;
+	background-color:#ffffff;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	}
+	
+#hartatitlu
+	{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	}
+	
+#hartatitlu h1 
+	{
+	text-align: center;
+	background-color: #E17A00;
+	margin: auto;
+	}
+	
+#hartaiframe 
+	{
+	width: 100%;
+	height: 664px;
+	border: solid 1px black;
+	box-sizing: border-box;
+	}
+	
+/* ---------------------------------------------------------------- TRASEU ---------------- */
+#traseu
+	{
+	width: 79%;
+	height: 45%;
+	float: left;
+	padding: 2%;
+	background-color:#ffffff;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	}
+	
+#traseutitlu
+	{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin-bottom: 1%;
+	}
+	
+#traseutitlu h1 
+	{
+	text-align: center;
+	background-color: #E17A00;
+	margin: auto;
+	}
+	
+#traseu p 
+	{
+	text-indent: 20px;
+	}
+	
+#traseuiframe 
+	{
+	width: 100%;
+	height: 614px;
+	border: solid 1px black;
+	box-sizing: border-box;
+	}
+	
+/* ---------------------------------------------------------------- ITINERARII ---------------- */
+#itinerarii
+	{
+	width: 79%;
+	height: 45%;
+	float: left;
+	padding: 2%;
+	background-color:#ffffff;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	}
+	
+#itinerariititlu
+	{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin-bottom: 1%;
+	}
+	
+#itinerariititlu h1 
+	{
+	text-align: center;
+	background-color: #E17A00;
+	margin: auto;
+	}
+	
+#itinerarii p 
+	{
+	text-indent: 20px;
+	}
+	
+form 
+	{
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 1.5em;
+	position: relative;
+	float: left;
+	}
+	
+textarea
+	{
+	resize: vertical;
+	}
+	
+input[type="text"] {
+	width: 20%;
+	}
+	
+input[type="submit"]
+	{
+	cursor: pointer;
+	}
+	
+#itinerariiimg 
+	{
+	width: 45%;
+	position: absolute;
+	float: right;
+	top: 10px;
+	right: 10px;
+	}
+	
+#itinerariiimg img 
+	{
+	width: 100%;
+	height: auto;
+	}
+	
+
+	
+/* ---------------------------------------------------------------- OBIECTIVE TURISTICE ---------------- */
+#obiective
+	{
+	width: 79%;
+	height: 45%;
+	float: left;
+	padding: 2%;
+	background-color:#ffffff;
+	box-shadow: 0 0 10px #714461;
+	overflow: auto;	
+	margin-bottom: 1%;
+	box-sizing: border-box;
+	}
+	
+#obiectivetitlu
+	{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	margin-bottom: 1%;
+	}
+	
+#obiectivetitlu h1 
+	{
+	text-align: center;
+	background-color: #E17A00;
+	margin: auto;
+	}
+	
+#obiectiveturistice
+	{
+	width: 100%;
+	height: auto;
+	border-bottom: dashed 1px;
+	}
+	
+#obiectiveturistice:last-child
+	{
+	border-bottom: none;
+	}
+	
+#obiectiveimagine
+	{
+	float: left;
+	width: 18%;
+	}
+	
+
+	
+#obiectivetext h3 
+	{
+	text-align: left;
+	}
+	
+/* ---------------------------------------------------------------- ASIDE ---------------- */
+	
+aside 
+	{
+	height: 45%;
+	border: solid 1px #E17A00;
+	box-sizing: border-box;
+	background-color: white;
+	width: 20%;
+	float: right;
+	margin-bottom: 1%;
+	padding: 1.5%;
+	}
+	
+aside h1, h2, h3 {
+	text-align: center;
+	}
+	
+aside img {
+	width: 100%;
+	}
+	
+aside p {
+	text-indent: 10px;
+	text-align: justify;
+	}
+	
+aside h1, #hartaj {
+	padding: 5px;
+	background-color: #E17A00;
+	
+	}
+	
+/* ------------------------------------------------------------------------ FOOTER ------------- */
+footer 
+	{
+	width: 100%;
+	height: 5%;
+	box-sizing: border-box;
+	clear: both;
+	background-color: #3a3b44;
+	line-height: 1.4em; 
+	font-size: 0.9em;
+	color: #ffffff;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	text-align: center;
+	}
+	
+footer a {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	}
+	
+/* ---------------------------------------------------------------------- RESPONSIVE ----------- */
+@media only screen and (max-width: 1024px)
+	{
+		#main, aside, #harta, #galerie, #video, #traseu, #itinerarii, #itinerariiimg, form, #obiective
+			{
+			float: none;
+			}
+		
+		 #main, nav, aside, .dropdown, #harta, #hartaiframe, #video, #traseu, #traseuiframe, #itinerarii, #itinerariiimg, textarea, #obiective
+			{
+			width: 100%;
+			}
+		
+		aside 
+			{				
+			text-align: center;
+			margin-top: 5%;
+			}
+			
+		#obiectiveimagine
+			{
+			margin-right: 1%;
+			}
+			
+		#itinerariiimg, form
+			{
+			height: auto;
+			}
+
+		form 
+			{
+			width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			line-height: 1.5em;
+			position: relative;
+			float: left;
+			}
+	
+		textarea
+			{
+			resize: vertical;
+			width: 45%;
+			}
+			
+		input[type="text"] {
+			width: 30%;
+			}
+			
+		#itinerariiimg 
+			{
+			width: 45%;
+			height: auto;
+			position: absolute;
+			float: right;
+			top: 10px;
+			right: 10px;
+			}
+		
+		#galerie
+			{
+			width: 100%;			
+			text-align: center;
+			margin-bottom: 3%;
+			}
+		
+		img 
+			{
+			max-width: 100%;
+			height: auto;
+			}
+			
+		.dropdown:first-child
+			{
+			margin-left: 0;
+			}
+			
+		.dropdown
+			{
+			position: relative;
+			}
+		
+		#submeniu 
+			{			
+			position: absolute; 
+			z-index: 1;
+			background-color: rgba(167, 34, 0, 1);
+			border: none;
+			box-shadow: none;
+			text-align: center;
+			width: 100%;
+			}
+			
+		#submeniu a 
+			{
+			background-color: rgb(180, 66, 0);
+			border: solid 1px maroon;
+			text-align: center;
+			display: block;
+			}
+			
+		#submeniu a:first-child
+			{
+			border-top: solid 1px maroon;			
+			}
+			
+		.dropdown:hover#submeniu
+			{
+			display: block;
+			}
+			
+		nav 
+			{
+			margin-bottom: 3%;
+			display: flex;
+			}
+		
+		.imagine-mare 
+			{
+			width: 90%; 			
+			margin: auto;					 
+			padding: 50% 0;					
+			}
+	
+	}	
+	
+	
+@media only screen and (max-width: 642px)
+	{
+		#main, aside, #formular, #harta, #traseu, #galerie, #video, #itinerarii, #itinerariiimg, form, #obiective
+			{
+			float: none;
+			}
+		
+		 #main, aside, .dropdown, #formular, #harta, #video, #traseu, #itinerarii, #itinerariiimg, textarea, #obiective
+			{
+			width: 100%;
+			}
+			
+		form 
+			{
+			width: 97%;
+			}		
+		
+		aside 
+			{				
+			text-align: center;
+			margin-top: 5%;
+			}
+			
+		#obiectiveimagine
+			{
+			margin-right: 1%;
+			}
+
+		#itinerariiimg, form
+			{
+			height: auto;
+			}
+
+		form 
+			{
+			width: 100%;
+			box-sizing: border-box;
+			line-height: 1.5em;
+			display: block;
+			}
+	
+		textarea
+			{
+			resize: vertical;
+			width: 60%;
+			}
+			
+		input[type="text"] {
+			width: 50%;
+			}
+			
+		#itinerariiimg 
+			{
+			width: 38%;
+			height: auto;
+			display: block;
+			}
+		
+		#galerie
+			{
+			width: 100%;			
+			text-align: center;
+			margin-bottom: 3%;
+			}
+		
+		img 
+			{
+			max-width: 100%;
+			height: auto;
+			}
+			
+		.meniu a, #submeniu a 
+			{
+			display: block;
+			}
+			
+		.dropdown 
+			{
+			border-radius: 0;
+			}
+			
+		.dropdown:first-child
+			{
+			margin-left: 0;
+			}
+		
+		#submeniu 
+			{			
+			position: initial;
+			z-index: 1;
+			background-color: rgba(167, 34, 0, 0.4);
+			border: none;
+			box-shadow: none;
+			text-align: center;
+			width: 100%;
+			}
+			
+		#submeniu a 
+			{
+			border: none;
+			text-align: center;
+			}
+			
+		#submeniu a:first-child
+			{
+			border-top: solid 1px maroon;
+			border-bottom: solid 1px maroon;			
+			}
+		
+		#submeniu a:last-child
+			{
+			border-radius: 0;
+			}
+			
+		.dropdown:hover #submeniu
+			{
+			display: block;
+			}
+			
+		nav 
+			{
+			margin-bottom: 3%;
+			display: block;
+			width: 100%;
+			overflow: auto;
+			}
+		
+		.imagine-mare 
+			{
+			width: 90%; 			
+			margin: auto;					 
+			padding: 50% 0;					
+			}	
+	}
